@@ -1,0 +1,40 @@
+name: E Z Commands
+author: EventfulDeer48
+api: [3.0.0, 3.2.5, 4.0.0]
+version: 0.0.1-Unfinished
+main: EventfulDeer48\Main
+commands:
+  gmc:
+    description: Sets your or another player's Gamemode to Creative.
+    usage: /gmc <player>
+  gms:
+    description: Sets your or another player's Gamemode to Survival.
+    usage: /gms <player>
+  gma:
+    description: Sets your or another player's Gamemode to Adventure.
+    usage: /gma <player>
+  freeze:
+    description: Freezes or Unfreezes a player.
+    usage: /freeze <player>
+  feed:
+    description: Satisfies your or another player's hunger.
+    usage: /feed <player>
+  heal:
+    description: Heals your or another player's health back to full.
+    usage: /heal <player>
+permissions:
+  ezcmds.*:
+    default: op
+    children:
+      ezcmds.gamemode:
+        default: op
+        description: With this permission players can change their or another player's Gamemode to Creative, Survival, etc.
+      ezcmds.freeze:
+        default: op
+        description: With this permission players can freeze/unfreeze themselves or other players.
+      ezcmds.feed:
+        default: op
+        description: With this permission players can set their or another player's hunger to full.
+      ezcmds.heal:
+        default: op
+        description: With this permission players can set their or another player's health to full.
