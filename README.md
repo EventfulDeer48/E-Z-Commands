@@ -10,3 +10,4 @@ These are the current commands of E Z Commands
 |------------|----------|-------------|
 |/gmc        |Gamemode 1|/gmc <player>|
 |/gms        |Gamemode 0|/gms <player>|
+|/gma        |Gamemode 2|/gma <player>|
